@@ -6,12 +6,6 @@ import './Navbar.css';
 
 function Navbar() {
   const [showCopied, setShowCopied] = React.useState(false);
-  let discord = 'fahlerile';
-
-  function handleClick() {
-    navigator.clipboard.writeText(discord);
-    setShowCopied(true);
-  }
 
   React.useEffect(() => {
     if (showCopied) {
@@ -23,21 +17,18 @@ function Navbar() {
       <nav className='navbar'>
         <ul className='navbar__linkList'>
           <li className='navbar__linkList__item'>
-            <a href='https://github.com/fahlerile' target='_blank' rel="noreferrer">
+            <a href='https://github.com/kitrofimov' target='_blank' rel="noreferrer">
               <i className="fa-brands fa-github fa-lg"></i>github
             </a>
           </li>
           <li className='navbar__linkList__item'>
-            <a href='https://www.kaggle.com/fahlerile' target='_blank' rel="noreferrer">
+            <a href='https://www.kaggle.com/kitrofimov' target='_blank' rel="noreferrer">
             <i className="fa-brands fa-kaggle fa-lg"></i>kaggle
             </a>
           </li>
           <li className='navbar__linkList__item'>
-            <a onClick={handleClick} class='navbar__linkList__item__discord'>
-              <i className="fa-brands fa-discord fa-lg"></i>
-              <TextTransition inline={true} direction="down" translateValue="50%" springConfig={{mass: 0.1, tension: 100, friction: 20}}>
-                {showCopied ? "Copied!" : discord}
-              </TextTransition>
+            <a href='https://t.me/kitrofimov' target='_blank' rel="noreferrer">
+            <i className="fa-brands fa-telegram fa-lg"></i>telegram
             </a>
           </li>
         </ul>
