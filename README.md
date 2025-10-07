@@ -1,1 +1,12 @@
-A simple one-page personal / portfolio website I made in May-June 2023 with React.JS.
+<h2 align="center"><a href="https://kitrofimov.github.io">🔗 Preview</a></h2>
+
+One-page portfolio website template made with ReactJS. Not populated with my real projects, yet ;)
+
+# Building
+
+```bash
+git clone https://github.com/kitrofimov/kitrofimov.github.io/
+cd kitrofimov.github.io
+npm install
+npm start
+```
